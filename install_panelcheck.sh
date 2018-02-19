@@ -3,7 +3,7 @@
 
 sudo mkdir /Applications/PanelCheck                   
 cd /Applications/PanelCheck                       
-curl 'https://github.com/CPHFOOD/PanelCheck/blob/master/PanelCheck_V1.4.2_sourceCode.zip' 
+sudo mv "$(pwd)"/PanelCheck_V1.4.2_sourceCode/* /Applications/PanelCheck 
 sudo unzip PanelCheck_V1.4.2_sourceCode.zip                           
 sudo rm PanelCheck_V1.4.2_sourceCode.zip
 
@@ -24,5 +24,5 @@ fi
 pip2 install -U wxPython
 pip2 install matplotlib numpy scipy pandas xlrd rpy2 
 sudo chmod u+x /Applications/PanelCheck/PanelCheck_V1.4.2_sourceCode/run_panelcheck.sh
-ln -s /Applications/PanelCheck/PanelCheck_V1.4.2_sourceCode/run_panelcheck.sh $HOME/Desktop/
+ln -s /Applications/PanelCheck/run_panelcheck.sh $HOME/Desktop/
 
