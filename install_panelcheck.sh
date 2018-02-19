@@ -1,11 +1,9 @@
 #!/bin/sh
 
-
-sudo mkdir /Applications/PanelCheck                   
-cd /Applications/PanelCheck                       
-sudo mv -f "$(pwd)"/PanelCheck_V1.4.2_sourceCode/* /Applications/PanelCheck                           
-cd "$(pwd)" 
-sudo rm -f PanelCheck*
+sudo mkdir /Applications/PanelCheck                                          
+sudo mv -fv "$(pwd)"/PanelCheck_V1.4.2_sourceCode/* /Applications/PanelCheck                           
+cd ../ 
+sudo rm -f "$(pwd)"/PanelCheck*
 
 OUTPUT=$(which pip)
 if echo "$OUTPUT" | grep -q "pip"; then
