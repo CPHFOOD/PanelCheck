@@ -2,8 +2,6 @@
 
 sudo mkdir /Applications/PanelCheck                                          
 sudo mv -fv "$(pwd)"/PanelCheck_V1.4.2_sourceCode/* /Applications/PanelCheck                           
-cd ../ 
-sudo rm -f "$(pwd)"/PanelCheck*
 
 OUTPUT=$(which pip)
 if echo "$OUTPUT" | grep -q "pip"; then
@@ -19,8 +17,8 @@ else
 fi
 
 
-pip2 install -U wxPython
-pip2 install matplotlib numpy scipy pandas xlrd rpy2 
-sudo chmod u+x /Applications/PanelCheck/PanelCheck_V1.4.2_sourceCode/run_panelcheck.sh
+sudo pip2 install -U wxPython
+sudo pip2 install matplotlib numpy scipy pandas xlrd rpy2 
+sudo chmod u+x /Applications/PanelCheck/run_panelcheck.sh
 ln -s /Applications/PanelCheck/run_panelcheck.sh $HOME/Desktop/
 
