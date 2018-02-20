@@ -88,6 +88,7 @@ setup(
              argv_emulation= True,
              matplotlib_backends = '*',
              resources=data,
+             optimize=True,
            #  versions=version,
              dylib_excludes=['Rblas.dylib','R.dylib','libR.dylib'],
 
@@ -96,6 +97,7 @@ setup(
                  CFBundleShortVersionString = version,     # must be in X.X.X format
                  CFBundleGetInfoString      = name+" "+ version,
                  CFBundleExecutable         = name,
+                 translatesAutoresizingMaskIntoConstraints='YES',
              ),
          ),
      ),
