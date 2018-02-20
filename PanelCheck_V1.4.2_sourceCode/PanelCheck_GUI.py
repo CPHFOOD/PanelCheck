@@ -2517,18 +2517,18 @@ class Main_Frame(wx.Frame):
             plot_title = "2-way ANOVA (1 rep) Plot"
 
 
-            if self.mm_anova1_plot_data == None:
+            #if self.mm_anova1_plot_data == None:
                 #print "anova plot data is None"
-                self.mm_anova1_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            if self.mm_anova1_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
+            self.mm_anova1_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #if self.mm_anova1_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
                 #print "actives changed"
-                self.mm_anova1_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            else:
-                new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #    self.mm_anova1_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #else:
+            #    new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
 
                 # use same calc data:
-                new_plot_data.copy_data(self.mm_anova1_plot_data)
-                self.mm_anova1_plot_data = new_plot_data
+            #    new_plot_data.copy_data(self.mm_anova1_plot_data)
+            #    self.mm_anova1_plot_data = new_plot_data
 
             self.mm_anova1_plot_data.set_limits(self.s_data.scale_limits)
 
@@ -2557,18 +2557,18 @@ class Main_Frame(wx.Frame):
             plot_title = "2-way ANOVA Plot"
 
 
-            if self.mm_anova2_plot_data == None:
+            #if self.mm_anova2_plot_data == None:
                 #print "anova plot data is None"
-                self.mm_anova2_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            if self.mm_anova2_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
+            self.mm_anova2_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #if self.mm_anova2_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
                 #print "actives changed"
-                self.mm_anova2_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            else:
-                new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #    self.mm_anova2_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #else:
+            #    new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
 
                 # use same calc data:
-                new_plot_data.copy_data(self.mm_anova2_plot_data)
-                self.mm_anova2_plot_data = new_plot_data
+            #    new_plot_data.copy_data(self.mm_anova2_plot_data)
+            #    self.mm_anova2_plot_data = new_plot_data
 
             self.mm_anova2_plot_data.set_limits(self.s_data.scale_limits)
 
@@ -2596,18 +2596,18 @@ class Main_Frame(wx.Frame):
             plot_title = "3-way ANOVA Plot"
 
 
-            if self.mm_anova3_plot_data == None:
+            #if self.mm_anova3_plot_data == None:
                 #print "anova plot data is None"
-                self.mm_anova3_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            if self.mm_anova3_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
+            self.mm_anova3_plot_data = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #if self.mm_anova3_plot_data.actives_changed(activeAssessors_List, activeAttributes_List, activeSamples_List):
                 #print "actives changed"
-                self.mm_anova3_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
-            else:
-                new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #    self.mm_anova3_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
+            #else:
+            #    new_plot_data  = MM_ANOVA_PlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
 
                 # use same calc data:
-                new_plot_data.copy_data(self.mm_anova3_plot_data)
-                self.mm_anova3_plot_data = new_plot_data
+             #   new_plot_data.copy_data(self.mm_anova3_plot_data)
+             #   self.mm_anova3_plot_data = new_plot_data
 
             self.mm_anova3_plot_data.set_limits(self.s_data.scale_limits)
 
