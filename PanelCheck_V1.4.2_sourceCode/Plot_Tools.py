@@ -735,7 +735,6 @@ def colored_frame(s_data, plot_data, active_att_list, active_att):
     #try:
     if isinstance(plot_data, (CollectionCalcPlotData)):
         print("collection_calc")
-        print 'am i here?'
         if not plot_data.collection_calc_data.has_key("p_matr"):
             plot_data.collection_calc_data["p_matr"] = attribute_significance(s_data, plot_data, one_rep=one_rep) # Product Effect p-matrix
         elif plot_data.collection_calc_data["p_matr"] == None:
@@ -770,9 +769,7 @@ def colored_frame(s_data, plot_data, active_att_list, active_att):
         active_atts = plot_data.accepted_active_attributes
 
     #print active_att
-    print active_atts
-    print 'I found it'
-    print p_matr
+    #print plot_data.ax.get_legend_handles_labels()
 
     if p_matr == None:
         print "Cannot set frame color: STD=0 for one or more attributes"
@@ -787,7 +784,7 @@ def colored_frame(s_data, plot_data, active_att_list, active_att):
 
     current_att_ind = active_atts.index(active_att)
 
-    #print current_att_ind
+    print current_att_ind
 
 
     # set frame coloring:

@@ -91,9 +91,9 @@ class GridFrame(wx.Frame):
             # coloring of assessor-, sample- and replicate-column
             # the three colors:
             #(r,g,b): (255,255,255)=White (0,0,0)=Black
-            assessors_BG_Color = wx.Color(240,240,240) #column 1 - very light gray +
-            samples_BG_Color = wx.Color(225,225,225) #column 2 - very light gray
-            replicates_BG_Color = wx.Color(210,210,210) #column 3 - light gray
+            assessors_BG_Color = wx.Colour(240,240,240) #column 1 - very light gray +
+            samples_BG_Color = wx.Colour(225,225,225) #column 2 - very light gray
+            replicates_BG_Color = wx.Colour(210,210,210) #column 3 - light gray
 
             for i in range(3, self.grid.GetNumberRows()):
                 self.grid.SetCellBackgroundColour(i,0,assessors_BG_Color)

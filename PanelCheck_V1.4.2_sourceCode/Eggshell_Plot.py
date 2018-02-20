@@ -402,7 +402,9 @@ def EggshellPlotter(s_data, plot_data, num_subplot=[1,1,1], **kwargs):
         
     # If 'Legend' is activated by user
     if plot_data.view_legend:
-        fig.legend(plotList, activeAssessorsList, 'upper right')
+        h, l = ax.get_legend_handles_labels()
+        fig.legend(h,l)
+        #fig.legend(plotList, activeAssessorsList, 'upper right')
     
     # Defining the titles, axes names, etc
     myTitle = 'Eggshell plot: ' + itemID[0]

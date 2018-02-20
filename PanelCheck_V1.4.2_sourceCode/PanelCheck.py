@@ -234,9 +234,9 @@ class Main(wx.App):
         #path = os.path.join(os.path.dirname(__file__), "R-2.3.1")
         #os.putenv("R_HOME", path)
         
-        #MySplash = MySplashScreen()
-        #MySplash.Show()
-        #time.sleep(2)
+        MySplash = MySplashScreen()
+        MySplash.Show()
+        time.sleep(2)
         
         if sys.platform.startswith("win"):
             appdata = os.path.join(os.environ['appdata'],'PanelCheck')
@@ -322,6 +322,7 @@ class Main(wx.App):
             pass
             
         self.main = PanelCheck_GUI.create(None, filename, delimiter)
+        self.main.Centre()
         self.main.Show()
         self.SetTopWindow(self.main)
         return 1

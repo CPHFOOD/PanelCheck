@@ -291,10 +291,13 @@ def profilePlotter(s_data, plot_data, num_subplot=[1,1,1], **kwargs):
             
     ax.grid(plot_data.view_grid)
     if plot_data.view_legend:
-        _legend_texts.append(''); _legend_texts.append('Mean')
-        plotList.append(None); 
-        plotList.append(Line2D([],[], color = "#000000", linewidth=3))
-        fig.legend(plotList, _legend_texts, 'upper right')    
+        h, l = ax.get_legend_handles_labels()
+        fig.legend(h,l)
+
+        #_legend_texts.append(''); _legend_texts.append('Mean')
+        #plotList.append(None); 
+        #plotList.append(Line2D([],[], color = "#000000", linewidth=3))
+        #fig.legend(plotList, _legend_texts, 'upper right')    
 
 
     y_lims = ax.get_ylim()

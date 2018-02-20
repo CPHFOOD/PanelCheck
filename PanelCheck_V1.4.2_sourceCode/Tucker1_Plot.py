@@ -286,7 +286,10 @@ def Tucker1Plotter(s_data, plot_data, num_subplot=[1,1,1], selection=[0,0], pc_x
 ##        output = open(fileNameTucker1, 'w')
         
         newActiveAttributesList_old = []; calculated = False
-        if plot_data.Scores != None:   
+        print(plot_data.Scores)
+        print(type(plot_data.Scores))
+        if not (plot_data.Scores is None):
+            print 'hi'    
             calculated = True
         
         print PCAmodeSelected

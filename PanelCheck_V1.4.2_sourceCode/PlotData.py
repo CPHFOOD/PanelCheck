@@ -149,6 +149,7 @@ class PCA_PlotData(PlotData):
 
 
 
+
 class CollectionCalcPlotData(PlotData):
     def __init__(self, active_ass=[], active_att=[], active_samp=[], tree_path=[], view_grid=False, view_legend=False):
 	PlotData.__init__(self, active_ass, active_att, active_samp, tree_path, view_grid, view_legend)

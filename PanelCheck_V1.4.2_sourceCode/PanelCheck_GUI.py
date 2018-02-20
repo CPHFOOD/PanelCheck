@@ -40,6 +40,7 @@ def create(parent, filename, delimiter):
 
 class Main_Frame(wx.Frame):
 #---GUI construction---#FFFFFF#FF8040-------------------------------------------
+
     def _init_coll_menuBar_Menus(self, parent):
 
         parent.Append(menu=self.menuFile, title=u'File')
@@ -2228,6 +2229,7 @@ class Main_Frame(wx.Frame):
 
 
             temp_plot_data = self.profile_plot_data
+            
 
             if temp_plot_data == None:
                 new_plot_data = CollectionCalcPlotData(activeAssessors_List, activeAttributes_List, activeSamples_List, pydata, self.menuViewGrid, self.menuViewLegend)
