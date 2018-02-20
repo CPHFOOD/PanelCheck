@@ -718,9 +718,9 @@ def attribute_significance(s_data, plot_data, one_rep=False):
     progress.set_gauge(value=100, text="Done\n")
     progress.Destroy()
     if one_rep:
-        return res[1][1] # Product Effect p-matrix
+        return res[1].rx(1,True) # Product Effect p-matrix
     else:
-        return res[2][6] # Product Effect p-matrix
+        return res[2].rx(6,True) # Product Effect p-matrix
 
 
 
@@ -774,7 +774,7 @@ def colored_frame(s_data, plot_data, active_att_list, active_att):
     if p_matr == None:
         print "Cannot set frame color: STD=0 for one or more attributes"
         return False
-    elif p_matr != len(active_atts):
+    elif len(p_matr) != len(active_atts):
         print "Cannot set frame color: length of p list != length of active attributes list"
         return False
 
@@ -789,12 +789,12 @@ def colored_frame(s_data, plot_data, active_att_list, active_att):
 
     # set frame coloring:
     #ax.set_axis_bgcolor(lsd_colors[p_matr[current_att_ind]])
-    plot_data.ax.axesFrame.set_color(lsd_colors[p_matr[current_att_ind]])
+    plot_data.ax.set_facecolor(lsd_colors[p_matr[current_att_ind]])
 
-    if plot_data.overview_plot:
-        plot_data.ax.axesFrame.set_linewidth(3)
-    else:
-        plot_data.ax.axesFrame.set_linewidth(3)
+    #if plot_data.overview_plot:
+    #    plot_data.ax.set_linewidth(3)
+    #else:
+    #    plot_data.ax.set_linewidth(3)
 
     return True
     #except: return
