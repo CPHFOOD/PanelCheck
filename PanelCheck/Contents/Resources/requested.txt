@@ -1,0 +1,16 @@
+nmap
+py27-matplotlib
+py27-pandas
+py27-pip
+py27-py2app
+py27-pyperclip
+py27-rpy2
+py27-scipy
+py27-wxpython-3.0
+py27-xlrd
+py36-jinja2
+py36-matplotlib
+py36-pandas
+py36-pip
+py36-rpy2
+py36-xlrd
