@@ -1,3 +1,7 @@
-This is a temporary semi-standalone until some minor detail 
-has been resolved regarding segmentation faults when compileing
-to a true standalone
+This version of PanelCheck are lacking a few features, which are
+
+Profile plot
+Eggshell plot
+ANOVA plot
+
+As these depend on R and needs a fix
