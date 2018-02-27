@@ -40,7 +40,7 @@ def _get_f2py_shebang():
     if set(('bdist_wheel', 'bdist_egg', 'bdist_wininst',
             'bdist_rpm')).intersection(sys.argv):
         return '#!python'
-    return '#!' + sys.executable
+    return '#!/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7'
 
 
 def configuration(parent_package='', top_path=None):
@@ -55,7 +55,7 @@ def configuration(parent_package='', top_path=None):
     config.make_svn_version_py()
 
     def generate_f2py_py(build_dir):
-        f2py_exe = 'f2py' + os.path.basename(sys.executable)[6:]
+        f2py_exe = 'f2py'
         if f2py_exe[-4:] == '.exe':
             f2py_exe = f2py_exe[:-4] + '.py'
         if 'bdist_wininst' in sys.argv and f2py_exe[-3:] != '.py':

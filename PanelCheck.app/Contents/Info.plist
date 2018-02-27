@@ -8,8 +8,6 @@
 	<string>PanelCheck</string>
 	<key>CFBundleExecutable</key>
 	<string>PanelCheck</string>
-	<key>CFBundleGetInfoString</key>
-	<string>PanelCheck 1.5.0</string>
 	<key>CFBundleIconFile</key>
 	<string>PythonApplet.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -25,7 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.0</string>
+	<string>1.5.0</string>
 	<key>LSHasLocalizedDisplayName</key>
 	<false/>
 	<key>NSAppleScriptEnabled</key>
@@ -53,7 +51,7 @@
 		<key>prefer_ppc</key>
 		<false/>
 		<key>site_packages</key>
-		<true/>
+		<false/>
 		<key>use_faulthandler</key>
 		<false/>
 		<key>use_pythonpath</key>

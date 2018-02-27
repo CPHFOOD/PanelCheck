@@ -257,8 +257,7 @@ class GnuFCompiler(FCompiler):
         return []
 
     def runtime_library_dir_option(self, dir):
-        sep = ',' if sys.platform == 'darwin' else '='
-        return '-Wl,-rpath%s"%s"' % (sep, dir)
+        return '-Wl,-rpath -Wl,"%s"' % dir
 
 
 class Gnu95FCompiler(GnuFCompiler):

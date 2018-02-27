@@ -474,7 +474,14 @@ def configuration(parent_package='',top_path=None):
                 if isinstance(d, str):
                     target_f.write('#define %s\n' % (d))
                 else:
-                    target_f.write('#define %s %s\n' % (d[0], d[1]))
+                    if d[0]!='SIZEOF_LONG' and d[0]!='SIZEOF_PY_INTPTR_T':
+                        target_f.write('#define %s %s\n' % (d[0], d[1]))
+                    else:
+                        target_f.write('#ifdef __LP64__\n')
+                        target_f.write('#define %s %s\n' % (d[0], 8))
+                        target_f.write('#else\n')
+                        target_f.write('#define %s %s\n' % (d[0], 4))
+                        target_f.write('#endif\n')
 
             # define inline to our keyword, or nothing
             target_f.write('#ifndef __cplusplus\n')
@@ -575,7 +582,14 @@ def configuration(parent_package='',top_path=None):
                 if isinstance(d, str):
                     target_f.write('#define %s\n' % (d))
                 else:
-                    target_f.write('#define %s %s\n' % (d[0], d[1]))
+                    if d[0]!='NPY_SIZEOF_LONG' and d[0]!='NPY_SIZEOF_PY_INTPTR_T':
+                        target_f.write('#define %s %s\n' % (d[0], d[1]))
+                    else:
+                        target_f.write('#ifdef __LP64__\n')
+                        target_f.write('#define %s %s\n' % (d[0], 8))
+                        target_f.write('#else\n')
+                        target_f.write('#define %s %s\n' % (d[0], 4))
+                        target_f.write('#endif\n')
 
             # Define __STDC_FORMAT_MACROS
             target_f.write("""

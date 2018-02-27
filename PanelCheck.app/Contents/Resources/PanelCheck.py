@@ -234,8 +234,8 @@ class Main(wx.App):
         #path = os.path.join(os.path.dirname(__file__), "R-2.3.1")
         #os.putenv("R_HOME", path)
         
-        #MySplash = MySplashScreen()
-        #MySplash.Show()
+        MySplash = MySplashScreen()
+        MySplash.Show()
         time.sleep(2)
         
         if sys.platform.startswith("win"):

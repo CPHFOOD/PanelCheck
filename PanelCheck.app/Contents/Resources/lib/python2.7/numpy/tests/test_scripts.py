@@ -77,7 +77,7 @@ def test_f2py():
         major = str(version.major)
         minor = str(version.minor)
 
-        f2py_cmds = ('f2py', 'f2py' + major, 'f2py' + major + '.' + minor)
+        f2py_cmds = ('f2py', 'f2py' + major, 'f2py' + major + '.' + minor, 'f2py-' + major + '.' + minor)
         success = False
 
         for f2py_cmd in f2py_cmds:
@@ -88,5 +88,5 @@ def test_f2py():
                 break
             except Exception:
                 pass
-        msg = "Warning: neither %s nor %s nor %s found in path" % f2py_cmds
+        msg = "Warning: none of %s, %s, %s, nor %s found in path" % f2py_cmds
         assert_(success, msg)
