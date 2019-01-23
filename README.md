@@ -77,7 +77,7 @@ SANDRA: Some text ...The red/orange/grey frame indicates level of signifcanse re
 
 On the left at the bottom of a plot there are some action icons. The *disk* is used for saving the particular plot.
 
-<img src="figs/export.png" alt="Import" width="100" />
+<img src="figs/export.png" alt="Import" width="200" />
 
 Analysis
 --------
