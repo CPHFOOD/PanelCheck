@@ -1,0 +1,6 @@
+library(DAinFoodScience)
+library(ggplot2)
+data("coffeetemppanel")
+png('~/Dropbox/Backup/MyDocumentsOnC/Python/PanelCheck/Github_materiale/figs/Ex1.png')
+qplot(data = coffeetemppanel, Sample, Intensity, group = factor(Assessor):factor(Replicate), color = factor(Assessor)) + geom_line() + theme_classic() + theme(legend.position = 'top')
+dev.off()
