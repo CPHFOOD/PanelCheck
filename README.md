@@ -6,7 +6,6 @@ PanelCheck for Mac
 -   [Installation](#installation)
     -   [Requirements](#requirements)
     -   [Download and your first launch](#download-and-your-first-launch)
-        -   [Include picture of first time launch](#include-picture-of-first-time-launch)
 -   [A minimal example](#a-minimal-example)
     -   [Import data](#import-data)
     -   [Plots](#plots)
@@ -19,7 +18,7 @@ PanelCheck for Mac
 FYI
 ===
 
-This version of PanelCheck are unpolished. By this is meant that all the features Regarding the actual data-analysis works but miscellaneous functionality such as the *about section* or *help section* might not function as desired.
+This version of PanelCheck is unpolished. By this is meant that all the features Regarding the actual data-analysis works but miscellaneous functionality such as the *about section* or *help section* might not function as desired.
 
 Windows ?
 =========
@@ -41,14 +40,12 @@ Download and your first launch
 -   Unzip and place the folder somewhere meaningful on your computer ( *Not* in Downloads)
 -   When you want to open the program first time, you will *NOT* be able to doubleclick. Use **Finder** to direct to the folder with the program, and then cmd+click on the icon. Then you will be prompted with this window where you hit enter.
 
-### Include picture of first time launch
-
 From now on you will be able to simple double-click on the program to get it running.
 
 A minimal example
 =================
 
-A real toy example data ( **Data\_Bread.xlsx**) is included. Here follows a short demonstration
+A real toy example data [Data\_Bread.xlsx](Data_Bread.xlsx) is included. Here follows a short demonstration
 
 Import data
 -----------
