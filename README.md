@@ -71,13 +71,13 @@ Profile plots show individual(coloured lines) and consensus (black bold line) sc
 
 Select the *Overview Plot (attributes)*. This plot shows the consensus among panellists for the different attributes. Assessors grouping together in a cluster indicate??? good agreement between these.
 
-\[Import\]
+<img src="figs/Tucker1_attributes.png" alt="Import" width="300" />
 
 ### Consensus - PCA scores
 
 This plot shows which prodcuts are perceived Similar and different.
 
-\[Import\]
+<img src="figs/ConsensurPCA.png" alt="Import" width="300" />
 
 ### Overall- Overview plot
 
