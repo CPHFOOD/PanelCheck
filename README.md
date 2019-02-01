@@ -59,23 +59,23 @@ When correctly mathced, hit **Accept**
 Plots
 -----
 
-In the graphical user interface, you will find four main tabs; *Univariate*, *Multivariate*, *Consensus* and *Overall*. In each main tab, several different plots are available.The red/orange/grey frame indicates level of signifcanse related to differences between samples for the particular attribute. Try to click on the different plot e.g.
+In the graphical user interface, you will find four main tabs; *Univariate*, *Multivariate*, *Consensus* and *Overall*. In each main tab, several different plots are available.The red/orange/grey frame indicates level of signifcanse related to differences between samples for the particular attribute. Try to click on the different plots e.g.
 
 ### Univariate - Profile plots
 
-Profile plots show individual(coloured lines) and consensus (black bold line) scoring (Y-axis) and ranking of samples (X-axis).
+Profile plots show individual(coloured lines) and consensus (black bold line) scoring (Y-axis) and ranking (X-axis) of samples.
 
 <img src="figs/profileplot.png" alt="Import" width="300" />
 
 ### Multivariate - Tucker-1 plots
 
-Select the *Overview Plot (attributes)*. This plot shows the consensus among panellists for the different attributes. Assessors grouping together in a cluster indicate??? good agreement between these.
+Select the *Overview Plot (attributes)*. This plot shows the consensus among panellists for the different attributes. Assessors grouping together in a cluster indicates good agreement between these.
 
 <img src="figs/Tucker1_attributes.png" alt="Import" width="300" />
 
 ### Consensus - PCA scores
 
-This plot shows which prodcuts are perceived Similar and different.
+This plot shows which prodcuts are perceived similar and different.
 
 <img src="figs/ConsensurPCA.png" alt="Import" width="300" />
 
